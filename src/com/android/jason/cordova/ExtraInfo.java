@@ -7,8 +7,8 @@ import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.PluginResult.Status;
 import org.json.JSONArray;
 import org.json.JSONException;
-import android.content.Context;
 
+import android.content.Context;
 import android.telephony.TelephonyManager;
 import java.util.HashMap;
 import org.apache.cordova.CordovaInterface;
@@ -23,8 +23,7 @@ public class ExtraInfo extends CordovaPlugin{
 
             if (action.equals("getExtra")) {
 
-                TelephonyManager tm = (TelephonyManager) this.cordova.getActivity().
-                                                    getSystemService(Context.TELEPHONY_SERVICE);
+                TelephonyManager tm = (TelephonyManager) cordova.getActivity().getSystemService(Context.TELEPHONY_SERVICE);
 
                 if (tm != null) {
                     telephInfo.put("DeviceId" ,tm.getDeviceId());
