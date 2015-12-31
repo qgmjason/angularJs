@@ -14,6 +14,13 @@ import java.util.HashMap;
 import org.apache.cordova.CordovaInterface;
 
 public class ExtraInfo extends CordovaPlugin{
+    
+      public static final String TAG = "com.android.jason.cordova.ExtraInfo";
+    
+       @Override
+    protected void pluginInitialize() {
+        super.pluginInitialize();
+    }
 
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext)
                 throws JSONException {
