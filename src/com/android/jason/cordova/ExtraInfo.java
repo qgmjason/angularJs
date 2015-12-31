@@ -39,7 +39,7 @@ public class ExtraInfo extends CordovaPlugin{
                     telephInfo.put("SubscriberId(IMSI)",tm.getSubscriberId());
                     telephInfo.put("VoiceMailNumber",tm.getVoiceMailNumber());
 
-                    callbackContext.success("success:plugin"));
+                    callbackContext.success("success:plugin");
                 } else {
                     callbackContext.error("error:plugin ");
                 }
