@@ -7,6 +7,7 @@ import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.PluginResult.Status;
 import org.json.JSONArray;
 import org.json.JSONException;
+import android.content.Context;
 
 import android.telephony.TelephonyManager;
 import java.util.HashMap;
